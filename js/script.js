@@ -17,6 +17,8 @@ function createEmail() {
 
 function renderHTML(parent, elements) {
     let liElement = document.createElement('li');
+    liElement.classList.add('list-group-item');
+    liElement.classList.add('p-4');
     liElement.innerText = elements;
     parent.appendChild(liElement);
 }
