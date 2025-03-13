@@ -1,8 +1,25 @@
 const listElement = document.getElementById('list-email');
 const numEmails = 10;
 
-for (let i = 0; i < numEmails; i++) {
-    createEmail();
+
+generateEmails(numEmails);
+
+
+
+
+
+
+
+
+
+
+
+// Functions
+
+function generateEmails(num) {
+    for (let i = 0; i < num; i++) {
+        createEmail();
+    }
 }
 
 function createEmail() {
@@ -22,4 +39,3 @@ function renderHTML(parent, elements) {
     liElement.innerText = elements;
     parent.appendChild(liElement);
 }
-
