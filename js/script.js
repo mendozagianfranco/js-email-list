@@ -1,9 +1,13 @@
 const listElement = document.getElementById('list-email');
+const btnElement = document.querySelector('.btn');
 const numEmails = 10;
-
 
 generateEmails(numEmails);
 
+btnElement.addEventListener('click', () => {
+    listElement.innerHTML = '';
+    generateEmails(numEmails);
+});
 
 
 
